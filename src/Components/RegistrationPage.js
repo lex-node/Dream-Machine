@@ -41,7 +41,7 @@ const RegistrationPage = withFormik({
             password: password || "",
         };
     },
-    /*validationSchema: Yup.object().shape({
+/*    validationSchema: Yup.object().shape({
         name: Yup.string()
             .required("Name is required"),
         email: Yup.string()
