@@ -1,14 +1,14 @@
 import React from 'react';
-import {Route, Link} from "react-router-dom";
-import LoginPage from './LoginPage.js';
+import {Link} from "react-router-dom";
 
 const Home = props => {
     return (
         <div>
             <div>
-                <h1>Links</h1>
                 <div>
-                    <Link to="/loginpage">Login Page</Link>
+                    <p>Returning Users: <Link to="/loginpage">Login Page</Link></p>
+                    <br/>
+                    <p>New Users: <Link to="/registrationpage">Registration Page</Link></p>
                 </div>
             </div>
         </div>

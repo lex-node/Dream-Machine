@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import axios from "axios";
 
 
-function LoginForm({isSubmitting, status}) {
+function RegistrationForm({isSubmitting, status}) {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
@@ -15,13 +15,16 @@ function LoginForm({isSubmitting, status}) {
 
     return (
         <div className="reactContainer">
-            <h1>Login Here</h1>
+            <h1>Register Here</h1>
             <Form>
                 <div className="fieldContainer">
                     <Field type="username" name="username" placeholder="Username"/>
                 </div>
                 <div className="fieldContainer">
                     <Field type="password" name="password" placeholder="Password"/>
+                </div>
+                <div className="fieldContainer">
+                    <Field type="birthdate" name="birthdate" placeholder="Birthdate"/>
                 </div>
                 <button disabled={isSubmitting}>Save</button>
             </Form>
@@ -31,7 +34,7 @@ function LoginForm({isSubmitting, status}) {
     );
 }
 
-const LoginPage = withFormik({
+const RegistrationPage = withFormik({
     mapPropsToValues({username, password}) {
         return {
             username: username || "",
@@ -51,7 +54,7 @@ const LoginPage = withFormik({
     handleSubmit(values, {resetForm, setStatus, setSubmitting}) {
 
         axios
-            .post("https://sleeptrack.herokuapp.com/api/login", values)
+            .post("https://sleeptrack.herokuapp.com/api/register", values)
             .then(res => {
                 console.log(res.data); // Data was created successfully and logs to console
                 setStatus(res.data);
@@ -64,9 +67,9 @@ const LoginPage = withFormik({
             });
 
     }
-})(LoginForm);
+})(RegistrationForm);
 
-export default LoginPage;
+export default RegistrationPage;
 
 /*
 * /api/register "POST"
