@@ -2,7 +2,7 @@ import {withFormik, Form, Field} from "formik";
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import axios from "axios";
-
+import * as Yup from "yup";
 
 function RegistrationForm({isSubmitting, status}) {
     const [users, setUsers] = useState([]);
@@ -35,22 +35,23 @@ function RegistrationForm({isSubmitting, status}) {
 }
 
 const RegistrationPage = withFormik({
-    mapPropsToValues({username, password}) {
+    mapPropsToValues({username, password, birthdate}) {
         return {
             username: username || "",
             password: password || "",
+            birthdate: birthdate || "",
         };
     },
-/*    validationSchema: Yup.object().shape({
-        name: Yup.string()
+    validationSchema: Yup.object().shape({
+        username: Yup.string()
             .required("Name is required"),
-        email: Yup.string()
-            .email("Email not valid")
-            .required("Email is required"),
         password: Yup.string()
-            .min(16, "Password must be 16 characters or longer")
-            .required("Password is required")
-    }),*/
+            .min(4, "Password must be 4 characters or longer")
+            .required("Password is required"),
+        birthdate: Yup.date()
+            .required("Birth date is required")
+            .default(new Date()),
+    }),
     handleSubmit(values, {resetForm, setStatus, setSubmitting}) {
 
         axios

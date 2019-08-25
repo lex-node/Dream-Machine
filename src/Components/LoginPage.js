@@ -2,6 +2,7 @@ import {withFormik, Form, Field} from "formik";
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import axios from "axios";
+import * as Yup from "yup";
 
 
 function LoginForm({isSubmitting, status}) {
@@ -38,16 +39,12 @@ const LoginPage = withFormik({
             password: password || "",
         };
     },
-    /*validationSchema: Yup.object().shape({
-        name: Yup.string()
+    validationSchema: Yup.object().shape({
+        username: Yup.string()
             .required("Name is required"),
-        email: Yup.string()
-            .email("Email not valid")
-            .required("Email is required"),
         password: Yup.string()
-            .min(16, "Password must be 16 characters or longer")
-            .required("Password is required")
-    }),*/
+            .required("Password is required"),
+    }),
     handleSubmit(values, {resetForm, setStatus, setSubmitting}) {
 
         axios
