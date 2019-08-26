@@ -3,19 +3,33 @@ import {Link} from "react-router-dom";
 
 const Home = props => {
     return (
-        <div>
-            <header>
-                <h1>Dream Machine</h1>
-                <br/>
-            </header>
-            <div>
-                <p>Returning Users: <Link to="/loginpage">Login Page</Link></p>
-                <br/>
-                <p>New Users: <Link to="/registrationpage">Registration Page</Link></p>
-                <br/>
-                <p>Display Your Data: <Link to="/activeuserdatapage">Active User Data Page</Link></p>
-            </div>
+<div class="container">
+    <header class="navigation">
+        <div class="nav-container">
+            <h1 class="logo"><a href="#">Dream Machine</a></h1>
+            <nav class="nav">
+                <a href="#" class="nav-links">Home</a>
+                <a href="#" class="nav-links">About</a>
+                <a href="#" class="nav-links">Contact</a>
+            </nav>
         </div>
+    </header>
+
+    <div class="main-section">
+        <div class="banner">
+            <h1>Dream Machine</h1>
+            <h3>Making the world a little better, one nap at a time!</h3>
+            <button><Link to="/registrationpage">New User Registration</Link></button>
+            <button><Link to="/loginpage">Returning User Login Page</Link></button>
+            <button><Link to="/activeuserdatapage">Display Your Data</Link></button>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; Team Sleep-tracker 2019</p>
+    </footer>
+</div>
     );
 }
 
