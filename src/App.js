@@ -4,8 +4,7 @@ import {Route} from "react-router-dom";
 import Home from './Components/Home.js';
 import LoginPage from './Components/LoginPage.js';
 import RegistrationPage from './Components/RegistrationPage.js';
-import TestUserData from './Components/TestUserData.js';
-import ActiveUserDataPage from './Components/ActiveUserDataPage.js';
+import ActiveUserSleepDataPage from './Components/ActiveUserSleepDataPage.js';
 import ContactPage from './Components/ContactPage.js';
 
 function App() {
@@ -15,8 +14,7 @@ function App() {
                 <Route exact path="/" component={Home}/>
                 <Route path="/loginpage" component={LoginPage}/>
                 <Route path="/registrationpage" component={RegistrationPage}/>
-                <Route path="/test" component={TestUserData}/>
-                <Route path="/activeuserdatapage" component={ActiveUserDataPage}/>
+                <Route path="/activeuserdatapage" component={ActiveUserSleepDataPage}/>
                 <Route path="/contactpage" component={ContactPage}/>
             </header>
         </div>
