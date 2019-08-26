@@ -12,7 +12,7 @@ const ActiveUserDataPage = props => {
     let tokenStr = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAwL…kyNX0.XkbEJZGNmLejeJByTrLh_qgq7mp-tMUijC-_MQ0Wb6s";
     console.log(`https://sleeptrack.herokuapp.com/api/user/${id}`);
     axios
-        .get(`https://sleeptrack.herokuapp.com/api/user/${id}`, { headers: {"Authorization" : `Bearer ${tokenStr}`} })
+        .get(`https://sleeptrack.herokuapp.com/api/user/${id}`, { headers: {"authorize" : `${tokenStr}`} })
 
         .then(response => {
             console.log(response);
