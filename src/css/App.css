@@ -219,7 +219,7 @@ footer {
   align-items: center;
 }
 .container {
-  background-image: url(/img/hammock.jpeg);
+  background-image: url("../Images/hammock.jpeg");
   height: 100%;
   background-size: cover;
   background-position: center;
