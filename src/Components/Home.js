@@ -6,7 +6,7 @@ const Home = props => {
 <div class="container">
     <header class="navigation">
         <div class="nav-container">
-            <h1 class="logo"><a href="#">Dream Machine</a></h1>
+            <h1 class="logo"><Link to="#">Dream Machine</Link></h1>
             <nav class="nav">
                 <Link to="/" class="nav-links">Home</Link>
                 <Link to="" class="nav-links">About</Link>

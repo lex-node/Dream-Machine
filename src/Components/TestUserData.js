@@ -9,6 +9,7 @@ const TestUserData = () => {
 		let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OTYsInVzZXJuYW1lIjoiTWFyc2hhbGwiLCJyb2xlIjoidXNlciIsImlhdCI6MTU2Njc4MjI4NiwiZXhwIjoxNTY2ODY4Njg2fQ.fjcHSyXHbN8wz3QOX2kls8V2a9tOmGXnPfyFpzm1B1k';
 		axios.get(url, {headers: {"authorize": `${token}`}})
 		.then(response => {
+			console.log(response.data);
 			setSleepData(response.data)
 		})
 		.catch(error => {
