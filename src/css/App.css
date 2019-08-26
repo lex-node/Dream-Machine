@@ -156,6 +156,7 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+
 .container {
   max-width: 95%;
   width: 100%;
@@ -231,7 +232,11 @@ footer {
   }
 }
 .main-section .banner {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   padding-top: 15%;
   line-height: 1.2;
   color: #BEA9DE;
@@ -254,6 +259,7 @@ footer {
   border: 1px solid #C0C0C0;
   cursor: pointer;
   font-size: 1.8rem;
+  margin: 10px;
 }
 @media (max-width: 500px) {
   .main-section .banner button {

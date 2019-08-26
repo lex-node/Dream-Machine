@@ -5,6 +5,7 @@ import Home from './Components/Home.js';
 import LoginPage from './Components/LoginPage.js';
 import RegistrationPage from './Components/RegistrationPage.js';
 import ActiveUserDataPage from './Components/ActiveUserDataPage.js';
+import ContactPage from './Components/ContactPage.js';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/loginpage" component={LoginPage}/>
                 <Route path="/registrationpage" component={RegistrationPage}/>
                 <Route path="/activeuserdatapage" component={ActiveUserDataPage}/>
+                <Route path="/contactpage" component={ContactPage}/>
             </header>
         </div>
     );

@@ -10,7 +10,7 @@ const Home = props => {
             <nav class="nav">
                 <Link to="/" class="nav-links">Home</Link>
                 <Link to="" class="nav-links">About</Link>
-                <Link to="" class="nav-links">Contact</Link>
+                <Link to="/contactpage" class="nav-links">Contact</Link>
             </nav>
         </div>
     </header>
