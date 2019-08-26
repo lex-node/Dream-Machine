@@ -1,13 +1,46 @@
 import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
 import axios from "axios";
+
+
+/*let webApiUrl = 'https://sleeptrack.herokuapp/api/user/100';
+let tokenStr = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAwL…Y1OH0.r92B_Sgm0DCGZ-Unc6esV5bticKyFvy98uiIFDm3hUs';
+axios.get(webApiUrl, { headers: {"Authorization" : `Bearer ${tokenStr}`} });*/
+
+
+const ActiveUserDataPage = props => {
+
+    const [user, setUser] = useState([]);
+
+
+    useEffect(() => {
+    const id ="100";
+    let tokenStr = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAwL…Y1OH0.r92B_Sgm0DCGZ-Unc6esV5bticKyFvy98uiIFDm3hUs';
+    console.log(`https://sleeptrack.herokuapp.com/api/user/${id}`);
+    axios
+        .get(`https://sleeptrack.herokuapp.com/api/user/${id}`, { headers: {"authorize" : `bearer ${tokenStr}`} })
+
+        .then(response => {
+            console.log(response);
+            setUser(response);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+}, []);
+
+    return (
+        <div>
+            <p> Hello {user}</p>
+        </div>
+    )
+
+}
+
+export default ActiveUserDataPage;
 
 /*### Users
 
-* /api/users "GET"
-  1. Returns a list of all users
-	2. JWT must be in the header under "authorize"
-	3. Only accessible as admin
 * /api/user/:id "GET"
 	1. Returns user that matches the params: id
 	  * All the sleep data for that user is included an array of objects
