@@ -14,10 +14,10 @@ const ActiveUserDataPage = props => {
 
     useEffect(() => {
     const id ="100";
-    let tokenStr = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAwL…Y1OH0.r92B_Sgm0DCGZ-Unc6esV5bticKyFvy98uiIFDm3hUs';
+    let tokenStr = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAwL…kyNX0.XkbEJZGNmLejeJByTrLh_qgq7mp-tMUijC-_MQ0Wb6s";
     console.log(`https://sleeptrack.herokuapp.com/api/user/${id}`);
     axios
-        .get(`https://sleeptrack.herokuapp.com/api/user/${id}`, { headers: {"authorize" : `bearer ${tokenStr}`} })
+        .get(`https://sleeptrack.herokuapp.com/api/user/${id}`, { headers: {"Authorization" : `Bearer ${tokenStr}`} })
 
         .then(response => {
             console.log(response);
@@ -31,7 +31,7 @@ const ActiveUserDataPage = props => {
 
     return (
         <div>
-            <p> Hello {user}</p>
+            <p> Hello, here is your sleep data: {user}</p>
         </div>
     )
 
