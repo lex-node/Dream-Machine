@@ -8,9 +8,9 @@ const ContactPage = props => {
                 <div className="nav-container">
                     <h1 className="logo"><Link to="#">Dream Machine</Link></h1>
                     <nav className="nav">
-                        <Link to="/" class="nav-links">Home</Link>
-                        <Link to="" class="nav-links">About</Link>
-                        <Link to="" class="nav-links">Contact</Link>
+                        <Link to="/" className="nav-links">Home</Link>
+                        <Link to="" className="nav-links">About</Link>
+                        <Link to="contactpage" className="nav-links">Contact</Link>
                     </nav>
                 </div>
             </header>

@@ -31,7 +31,7 @@ const ActiveUserSleepDataPage = props => {
                     <nav className="nav">
                         <Link to="/" className="nav-links">Home</Link>
                         <Link to="" className="nav-links">About</Link>
-                        <Link to="" className="nav-links">Contact</Link>
+                        <Link to="contactpage" className="nav-links">Contact</Link>
                     </nav>
                 </div>
             </header>
