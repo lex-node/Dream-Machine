@@ -1,17 +1,10 @@
 import {withFormik, Form, Field} from "formik";
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 import axios from "axios";
 import * as Yup from "yup";
 
 function RegistrationForm({isSubmitting, status}) {
-    const [users, setUsers] = useState([]);
-
-    useEffect(() => {
-        if (status) {
-            setUsers([...users, status]);
-        }
-    }, [status, users]);
 
     return (
         <div className="reactContainer">
@@ -72,16 +65,4 @@ const RegistrationPage = withFormik({
 
 export default RegistrationPage;
 
-/*
-* /api/register "POST"
-	1. Registers a new user to the database
-  2. Takes an object with properties "username", "password"
-	  * {username: "lorem", password: "lorem", birthdate: "Standard Date such as 'new Date()'" }
-	  * all three are required
-* /api/login "POST"
-  1. Login existing user. Returns the web token.
-	2. Takes an object with properties "username", "password"
-	  * {username: "lorem", password: "lorem"}
-		* both are reqired
-	3. Successful login returns web token
-	4. Unsuccessful returns an object with the error in question */
+
