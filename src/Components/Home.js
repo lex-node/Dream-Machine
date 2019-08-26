@@ -8,9 +8,9 @@ const Home = props => {
         <div class="nav-container">
             <h1 class="logo"><a href="#">Dream Machine</a></h1>
             <nav class="nav">
-                <a href="#" class="nav-links">Home</a>
-                <a href="#" class="nav-links">About</a>
-                <a href="#" class="nav-links">Contact</a>
+                <Link to="/" class="nav-links">Home</Link>
+                <Link to="" class="nav-links">About</Link>
+                <Link to="" class="nav-links">Contact</Link>
             </nav>
         </div>
     </header>

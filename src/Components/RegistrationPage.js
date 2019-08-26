@@ -7,22 +7,36 @@ import * as Yup from "yup";
 function RegistrationForm({isSubmitting, status}) {
 
     return (
-        <div className="reactContainer">
-            <h1>Register Here</h1>
-            <Form>
-                <div className="fieldContainer">
-                    <Field type="username" name="username" placeholder="Username"/>
+        <div class="container">
+            <header class="navigation">
+                <div class="nav-container">
+                    <h1 class="logo"><a href="#">Dream Machine</a></h1>
+                    <nav class="nav">
+                        <Link to="/" class="nav-links">Home</Link>
+                        <Link to="" class="nav-links">About</Link>
+                        <Link to="" class="nav-links">Contact</Link>
+                    </nav>
                 </div>
-                <div className="fieldContainer">
-                    <Field type="password" name="password" placeholder="Password"/>
+            </header>
+            <div class="main-section">
+                <div class="banner">
+                    <h1>Register Here</h1>
+                    <Form>
+                        <div className="fieldContainer">
+                            <Field type="username" name="username" placeholder="Username"/>
+                        </div>
+                        <div className="fieldContainer">
+                            <Field type="password" name="password" placeholder="Password"/>
+                        </div>
+                        <div className="fieldContainer">
+                            <Field type="birthdate" name="birthdate" placeholder="Birthdate"/>
+                        </div>
+                        <button disabled={isSubmitting}>Save</button>
+                    </Form>
+                    <br/>
+                    <Link to="/">Home</Link>
                 </div>
-                <div className="fieldContainer">
-                    <Field type="birthdate" name="birthdate" placeholder="Birthdate"/>
-                </div>
-                <button disabled={isSubmitting}>Save</button>
-            </Form>
-            <br/>
-            <Link to="/">Home</Link>
+            </div>
         </div>
     );
 }
