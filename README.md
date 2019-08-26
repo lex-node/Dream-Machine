@@ -2,7 +2,7 @@
 
 ## ENDPOINTS
 
-### Auth
+### Auth - DONE 
 
 * /api/register "POST"
 	1. Registers a new user to the database
