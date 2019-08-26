@@ -2,11 +2,6 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 
 
-/*let webApiUrl = 'https://sleeptrack.herokuapp/api/user/100';
-let tokenStr = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAwL…Y1OH0.r92B_Sgm0DCGZ-Unc6esV5bticKyFvy98uiIFDm3hUs';
-axios.get(webApiUrl, { headers: {"Authorization" : `Bearer ${tokenStr}`} });*/
-
-
 const ActiveUserDataPage = props => {
 
     const [user, setUser] = useState([]);
