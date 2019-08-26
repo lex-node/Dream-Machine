@@ -4,9 +4,9 @@ import {Link} from "react-router-dom";
 import axios from "axios";
 import * as Yup from "yup";
 
-function LoginForm({isSubmitting, status}) {
-    return (
 
+const LoginForm = props => {
+    return (
         <div className="container">
             <header className="navigation">
                 <div className="nav-container">
@@ -23,12 +23,14 @@ function LoginForm({isSubmitting, status}) {
                     <h1>Login Here</h1>
                     <Form>
                         <div className="fieldContainer">
+                            {props.touched.username && props.errors.username && <p>{props.errors.username}</p>}
                             <Field type="username" name="username" placeholder="Username"/>
                         </div>
                         <div className="fieldContainer">
+                            {props.touched.password && props.errors.password && <p>{props.errors.password}</p>}
                             <Field type="password" name="password" placeholder="Password"/>
                         </div>
-                        <button disabled={isSubmitting}>Save</button>
+                        <button disabled={props.isSubmitting} type="Submit">Save</button>
                     </Form>
                     <br/>
                     <Link to="/">Home</Link>
@@ -39,10 +41,11 @@ function LoginForm({isSubmitting, status}) {
 }
 
 const LoginPage = withFormik({
-    mapPropsToValues({username, password}) {
+
+    mapPropsToValues(props) {
         return {
-            username: username || "",
-            password: password || "",
+            username: props.username || "",
+            password: props.password || ""
         };
     },
     validationSchema: Yup.object().shape({
@@ -56,7 +59,8 @@ const LoginPage = withFormik({
         axios
             .post("https://sleeptrack.herokuapp.com/api/login", values)
             .then(res => {
-                console.log(res.data.token); // Data was created successfully and logs to console
+                console.log(res.data.token);
+                console.log(res.data);
                 setStatus(res.data);
                 resetForm();
                 setSubmitting(false);

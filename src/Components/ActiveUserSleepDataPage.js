@@ -47,3 +47,28 @@ const ActiveUserSleepDataPage = props => {
 }
 
 export default ActiveUserSleepDataPage;
+
+
+/*### Sleep Data
+
+* /api/sleepData "POST"
+  1. Posts new sleep data to the DB
+	2. Takes an object {userID: , start: ,end: ,hours: , scale}
+	  * userID is required. Must match the user.
+		* start = start time
+		* end = end time
+		* hours = diffence of END and START
+		* scale = emoji value, currently set for 1 - 4
+	3. JWT must be in the header under "authorize"
+	4. accessible by the user and admin
+* /api/sleepData/:id "PUT"
+  1. Edits the recored matching the params: id
+	2. Takes a sleep data object {userID: , start: ,end: , hours: , scale}
+	3. JWT must be in the header under "authorize"
+	4. accessible by the user and admin
+	5. On success returns number of edited records
+* /api/sleepData/:id "DELETE"
+  1. Deletes record that matches the params: id
+	2. JWT must be in the header under "authorize"
+	3. accessible by the user and admin
+	4. On Success Returns the number of records deleted*/
