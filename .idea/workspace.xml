@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b672740-c9d0-4299-bdd9-bde56697f272" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/ContactPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ActiveUserDataPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ActiveUserDataPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/ContactPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+            <state relative-caret-position="294">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -63,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Components/ActiveUserDataPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="189">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#1#50#0" expanded="true" />
               </folding>
@@ -159,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/Components/RecommendedSleep.js" />
         <option value="$PROJECT_DIR$/src/Components/ActiveUserData.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/password.txt" />
-        <option value="$PROJECT_DIR$/src/Components/ActiveUserDataPage.js" />
         <option value="$PROJECT_DIR$/src/Components/RegistrationPage.js" />
         <option value="$PROJECT_DIR$/src/Components/LoginPage.js" />
         <option value="$PROJECT_DIR$/src/css/App.css" />
@@ -167,13 +163,14 @@
         <option value="$PROJECT_DIR$/src/Components/Home.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Components/ContactPage.js" />
+        <option value="$PROJECT_DIR$/src/Components/ActiveUserDataPage.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="72" />
+    <option name="x" value="52" />
     <option name="y" value="27" />
-    <option name="width" value="1727" />
+    <option name="width" value="1262" />
     <option name="height" value="939" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -190,6 +187,11 @@
             <path>
               <item name="keron-gabriel-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="keron-gabriel-react" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keron-gabriel-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keron-gabriel-react" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="keron-gabriel-react" type="b2602c69:ProjectViewProjectNode" />
@@ -264,18 +266,18 @@
       <updated>1566518734117</updated>
       <workItem from="1566518735416" duration="812000" />
       <workItem from="1566520088979" duration="11911000" />
-      <workItem from="1566766543092" duration="17361000" />
+      <workItem from="1566766543092" duration="19345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30084000" />
+    <option name="totallyTimeSpent" value="32068000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="72" y="27" width="1727" height="939" extended-state="4" />
+    <frame x="52" y="27" width="1262" height="939" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987437" visible="true" weight="0.18368545" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987437" visible="true" weight="0.25262308" />
       <window_info id="Structure" order="1" sideWeight="0.5012563" side_tool="true" weight="0.14906368" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -390,16 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/ActiveUserDataPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#1#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -409,10 +401,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/ContactPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+        <state relative-caret-position="294">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/ActiveUserDataPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#1#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
