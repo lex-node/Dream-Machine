@@ -61,6 +61,8 @@ const LoginPage = withFormik({
             .then(res => {
                 console.log(res.data.token);
                 console.log(res.data);
+                localStorage.setItem('token', res.data.token);
+                localStorage.setItem('id', res.data.id);
                 setStatus(res.data);
                 resetForm();
                 setSubmitting(false);

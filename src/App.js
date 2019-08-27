@@ -1,4 +1,4 @@
-import React, {/*useEffect, */useState} from 'react';
+import React from 'react';
 import './css/App.css';
 import {Route} from "react-router-dom";
 import Home from './Components/Home.js';
@@ -8,7 +8,6 @@ import ActiveUserSleepDataPage from './Components/ActiveUserSleepDataPage.js';
 import ContactPage from './Components/ContactPage.js';
 
 function App() {
-    const [activeUser, setActiveUser] = useState({});
 
     return (
         <div className="App">

@@ -68,6 +68,8 @@ const RegistrationPage = withFormik({
                 setStatus(res.data);
                 resetForm();
                 setSubmitting(false);
+                localStorage.setItem('token', res.data.token);
+                localStorage.setItem('id', res.data.id);
             })
             .catch(err => {
                 console.log(err); // There was an error creating the data and logs to console
