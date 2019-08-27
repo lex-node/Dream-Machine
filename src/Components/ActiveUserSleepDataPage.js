@@ -8,8 +8,10 @@ const ActiveUserSleepDataPage = props => {
     const [userSleepData, setUserSleepData] = useState([]);
 
     useEffect(() => {
-        const id = "100";
-        let tokenStr = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAwLCJ1c2VybmFtZSI6ImdhYnJpZWxzaGFwaXJvIiwicm9sZSI6InVzZXIiLCJpYXQiOjE1NjY3ODgyNzksImV4cCI6MTU2Njg3NDY3OX0.-BsNy71u2zAud8E3A12iXeoCaNaszXGqbM-MTaoqDic";
+        const id = localStorage.getItem('id');
+        console.log(id);
+        let tokenStr = localStorage.getItem('token');
+        console.log(tokenStr);
         axios
             .get(`https://sleeptrack.herokuapp.com/api/user/${id}`, {headers: {"authorize": `${tokenStr}`}})
 
