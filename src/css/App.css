@@ -83,13 +83,14 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -102,174 +103,242 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
+
 body {
-  line-height: 1;
+    line-height: 1;
 }
+
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
+
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none;
+    content: '';
+    content: none;
 }
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
+
 html,
 body {
-  font-family: s;
-  color: #2E4482;
+    font-family: s;
+    color: #2E4482;
 }
+
 h1 {
-  font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
+
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
 h2 {
-  font-size: 3.2rem;
+    font-size: 3.2rem;
 }
+
 h3 {
-  font-size: 2.8rem;
+    font-size: 2.8rem;
 }
+
 p {
-  font-size: 1.6rem;
-  line-height: 1.4;
+    font-size: 1.6rem;
+    line-height: 1.4;
 }
 
 .container {
-  max-width: 95%;
-  width: 100%;
-  margin: 0 auto;
-}
-.navigation {
-  width: 90%;
-  height: 45px;
-  position: fixed;
-}
-.navigation .nav-container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-@media (max-width: 500px) {
-  .navigation .nav-container {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-.navigation .nav-container .logo {
-  margin: 0 1.2rem;
-  font-size: 2.5rem;
-}
-@media (max-width: 500px) {
-  .navigation .nav-container .logo {
-    padding: 10px;
-    font-size: 3rem;
-  }
-}
-.navigation .nav-container .logo a {
-  color: #BEA9DE;
-  text-decoration: none;
-}
-.navigation .nav-container .nav {
-  width: 350px;
-  display: flex;
-  justify-content: space-evenly;
-}
-@media (max-width: 500px) {
-  .navigation .nav-container .nav {
     width: 100%;
-    padding: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    width: 90%;
+    height: 45px;
+    border-radius: 50px;
+    background-color: black;
+    opacity: 0.87;
+}
+
+.navigation .nav-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-  }
 }
+
+.nav {
+    align-content: end;
+}
+
+@media (max-width: 500px) {
+    .navigation .nav-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.navigation .nav-container .logo {
+    margin: 0 1.2rem;
+    font-size: 3rem;
+}
+
+@media (max-width: 500px) {
+    .navigation .nav-container .logo {
+        padding: 10px;
+        font-size: 3rem;
+    }
+}
+
+.navigation .nav-container .logo a {
+    color: #7b224d;
+    text-decoration: none;
+}
+
+.navigation .nav-container .nav {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+    .navigation .nav-container .nav {
+        width: 100%;
+        padding: 8px;
+        justify-content: space-between;
+    }
+}
+
 .navigation .nav-container .nav .nav-links {
-  font-size: 1.6rem;
-  color: #BEA9DE;
-  text-decoration: none;
-  text-transform: capitalize;
+    font-size: 3rem;
+    color: #7b224d;
+    text-decoration: none;
+    text-transform: capitalize;
 }
+
 footer {
-  color: #BEA9DE;
-  padding: 20px 0;
-  margin-top: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    color: #7b224d;
+    padding: 20px 0;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .container {
-  background-image: url("../Images/hammock.jpeg");
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-@media (max-width: 500px) {
-  .container {
+    background-image: url("https://www.desktopbackground.org/p/2013/07/13/606604_hieronymus-bosch-hell_1920x1080_h.jpg");
+    height: 100%;
     background-size: cover;
-    background-position: inherit;
-  }
+    background-position: center;
 }
-.main-section .banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding-top: 15%;
-  line-height: 1.2;
-  color: #BEA9DE;
-}
-.main-section .banner h1 {
-  font-size: 12rem;
-}
-.main-section .banner h3 {
-  font-size: 3rem;
-  padding-bottom: 20px;
-}
-.main-section .banner button {
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  width: 200px;
-  height: 45px;
-  background-color: #87889C;
-  color: #BEA9DE;
-  border: 1px solid #C0C0C0;
-  cursor: pointer;
-  font-size: 1.8rem;
-  margin: 10px;
-}
+
 @media (max-width: 500px) {
-  .main-section .banner button {
-    width: 95%;
-  }
+    .container {
+        background-size: cover;
+        background-position: inherit;
+    }
 }
+
+.main-section .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 15%;
+    line-height: 1.2;
+    color: #6d0a3a;
+}
+
+.blackcloud {
+    background-color: black;
+    width: 90%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.87;
+}
+
+
+.main-section .banner h1 {
+    font-size: 8rem;
+}
+
+.main-section .banner h3 {
+    font-size: 3rem;
+    padding-bottom: 20px;
+    margin: 20px;
+}
+
+.main-section .banner .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6d0a3a;
+    cursor: pointer;
+    font-size: 3rem;
+    margin: 50px;
+    margin-top: 70px;
+}
+
+.main-section .banner button {
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 200px;
+    height: 45px;
+    background-color: black;
+    color: #6d0a3a;
+    border: 1px solid #4f104f;
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin: 10px;
+    opacity: 0.90;
+}
+
+@media (max-width: 500px) {
+    .main-section .banner button {
+        width: 95%;
+    }
+}
+
 .main-section .banner button:hover {
-  background: #FFFFFF;
-  color: #2E4482;
+    background: #FFFFFF;
+    color: #2E4482;
 }
+
 .main-section .banner button a {
-  text-decoration: none;
+    text-decoration: none;
 }
