@@ -19,13 +19,14 @@ const Home = props => {
                 <div className="banner">
                     <div className="blackcloud">
                         <h1>Dream Machine</h1>
-                        <h3>Making the world a little better, one nap at a time!</h3>
+                        <h3>making the world a little better, one nightmare at a time!</h3>
                     </div>
                     <div className="buttonContainer">
                         <button><Link to="/registrationpage">New User Registration</Link></button>
                         <button><Link to="/loginpage">Returning User Login Page</Link></button>
                         <button><Link to="/graphpage">Display Your Sleep Graph</Link></button>
                     </div>
+                <iframe src="https://open.spotify.com/embed/track/0vwPU0ZJn3V3pE3rdlodqX" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
 
