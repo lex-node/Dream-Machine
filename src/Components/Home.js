@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Link} from "react-router-dom";
+import soundfile from "../Images/(Disc 2) 08 - Darkness Begins (The Soundtrack Album).mp3"
+import Sound from 'react-sound'
 
 const Home = props => {
     return (
@@ -26,7 +28,13 @@ const Home = props => {
                         <button><Link to="/loginpage">Returning User Login Page</Link></button>
                         <button><Link to="/graphpage">Display Your Sleep Graph</Link></button>
                     </div>
-                <iframe src="https://open.spotify.com/embed/track/0vwPU0ZJn3V3pE3rdlodqX" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <Sound
+                        url={soundfile}
+                        playStatus={Sound.status.PLAYING}
+                        onLoading={props.handleSongLoading}
+                        onPlaying={props.handleSongPlaying}
+                        onFinishedPlaying={props.handleSongFinishedPlaying}
+                    />
                 </div>
             </div>
 
