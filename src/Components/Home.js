@@ -31,9 +31,7 @@ const Home = props => {
                     <Sound
                         url={soundfile}
                         playStatus={Sound.status.PLAYING}
-                        onLoading={props.handleSongLoading}
-                        onPlaying={props.handleSongPlaying}
-                        onFinishedPlaying={props.handleSongFinishedPlaying}
+                        onFinishedPlaying={props.repeat}
                     />
                 </div>
             </div>
