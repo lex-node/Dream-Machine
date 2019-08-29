@@ -40,9 +40,9 @@
         <entry file="file://$PROJECT_DIR$/src/Components/Home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
-              <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -222,12 +222,12 @@
       <workItem from="1566869522404" duration="8842000" />
       <workItem from="1567040544636" duration="3429000" />
       <workItem from="1567044127322" duration="2332000" />
-      <workItem from="1567047077181" duration="3176000" />
+      <workItem from="1567047077181" duration="3286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55377000" />
+    <option name="totallyTimeSpent" value="55487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1073" height="939" extended-state="4" />
@@ -421,9 +421,9 @@
     <entry file="file://$PROJECT_DIR$/src/Components/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
-          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>

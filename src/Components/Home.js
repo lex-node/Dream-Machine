@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
 import soundfile from "../Images/(Disc 2) 08 - Darkness Begins (The Soundtrack Album).mp3"
 import Sound from 'react-sound'
@@ -38,7 +38,7 @@ const Home = props => {
 
 
             <footer>
-                <p>&copy; Team Sleep-tracker 2019</p>
+                <p>&copy; Somnabulist 2019</p>
             </footer>
         </div>
     );
