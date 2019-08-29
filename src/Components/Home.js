@@ -4,6 +4,13 @@ import {Link} from "react-router-dom";
 const Home = props => {
     return (
         <div className="container">
+            <div data-video="fkfKUrwxPfQ"
+                 data-autoplay="1"
+                 data-loop="1"
+                 id="youtube-audio">
+            </div>
+            <script src="https://www.youtube.com/iframe_api"></script>
+            <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
             <header className="navigation">
                 <div className="nav-container">
                     <h1 className="logo"><Link to="#">Dream Machine</Link></h1>

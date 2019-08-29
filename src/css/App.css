@@ -182,11 +182,12 @@ p {
 
 .navigation {
     display: flex;
-    width: 90%;
+    width: 80%;
     height: 45px;
     border-radius: 50px;
     background-color: black;
     opacity: 0.87;
+    padding: 10px;
 }
 
 .navigation .nav-container {
@@ -269,26 +270,37 @@ footer {
     }
 }
 
+
+.main-section  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 100%;
+}
+
 .main-section .banner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    align-content: center;
+    align-content: space-between;
     padding-top: 15%;
     line-height: 1.2;
+    height: 100%;
     color: #6d0a3a;
 }
 
 .blackcloud {
     background-color: black;
-    width: 90%;
+    width: 95%;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0.87;
+    margin-top: 10%;
 }
 
 
@@ -304,13 +316,13 @@ footer {
 
 .main-section .banner .buttonContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     color: #6d0a3a;
     cursor: pointer;
     font-size: 3rem;
     margin: 50px;
-    margin-top: 70px;
+    margin-top: 5%;
 }
 
 .main-section .banner button {
@@ -318,14 +330,16 @@ footer {
     align-items: center;
     border-radius: 15px;
     width: 200px;
-    height: 45px;
+    height: 60px;
     background-color: black;
     color: #6d0a3a;
     border: 1px solid #4f104f;
     cursor: pointer;
     font-size: 1.8rem;
-    margin: 10px;
-    opacity: 0.90;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 0.95;
 }
 
 @media (max-width: 500px) {
@@ -335,8 +349,8 @@ footer {
 }
 
 .main-section .banner button:hover {
-    background: #FFFFFF;
-    color: #2E4482;
+    background: chartreuse;
+    color: #7b224d;
 }
 
 .main-section .banner button a {
