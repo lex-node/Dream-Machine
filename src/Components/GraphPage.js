@@ -3,7 +3,7 @@ import axios from "axios";
 import {Link} from "react-router-dom";
 
 
-const ActiveUserSleepDataPage = props => {
+const GraphPage = props => {
 
     const [userSleepData, setUserSleepData] = useState([]);
 
@@ -13,8 +13,8 @@ const ActiveUserSleepDataPage = props => {
         let tokenStr = localStorage.getItem('token');
         console.log(tokenStr);
         axios
-            .get(`https://sleeptrack.herokuapp.com/api/user/${id}`, {headers: {"authorize": `${tokenStr}`}})
-
+            /*.get(`https://sleeptrack.herokuapp.com/api/user/${id}`, {headers: {"authorize": `${tokenStr}`}})*/
+            .post('https://sleeptrack.herokuapp.com/api/sleepData', {userID: {id}, start: "9:00", end: "10:00",hours: 1})
             .then(response => {
                 console.log(response.sleepData);
                 setUserSleepData(response.sleepData);
@@ -48,7 +48,7 @@ const ActiveUserSleepDataPage = props => {
     )
 }
 
-export default ActiveUserSleepDataPage;
+export default GraphPage;
 
 
 /*### Sleep Data

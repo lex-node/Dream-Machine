@@ -4,7 +4,7 @@ import {Route} from "react-router-dom";
 import Home from './Components/Home.js';
 import LoginPage from './Components/LoginPage.js';
 import RegistrationPage from './Components/RegistrationPage.js';
-import ActiveUserSleepDataPage from './Components/ActiveUserSleepDataPage.js';
+import GraphPage from './Components/GraphPage.js';
 import ContactPage from './Components/ContactPage.js';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
                 <Route exact path="/" component={Home}/>
                 <Route path="/loginpage" component={LoginPage}/>
                 <Route path="/registrationpage" component={RegistrationPage}/>
-                <Route path="/activeuserdatapage" component={ActiveUserSleepDataPage}/>
+                <Route path="/graphpage" component={GraphPage}/>
                 <Route path="/contactpage" component={ContactPage}/>
             </header>
         </div>

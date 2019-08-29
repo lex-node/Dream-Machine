@@ -21,7 +21,7 @@ const Home = props => {
             <h3>Making the world a little better, one nap at a time!</h3>
             <button><Link to="/registrationpage">New User Registration</Link></button>
             <button><Link to="/loginpage">Returning User Login Page</Link></button>
-            <button><Link to="/activeuserdatapage">Display Your Data</Link></button>
+            <button><Link to="/graphpage">Display Your Sleep Graph</Link></button>
         </div>
     </div>
 
