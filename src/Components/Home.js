@@ -13,9 +13,15 @@ const Home = props => {
                         <h3>making the world a little better, one nightmare at a time!</h3>
                     </div>
                     <div className="buttonContainer">
-                        <button><Link to="/registrationpage">New User Registration</Link></button>
-                        <button><Link to="/loginpage">Returning User Login</Link></button>
-                        <button><Link to="/graphpage">Display Your Sleep Graph</Link></button>
+                        <Link to="/registrationpage">
+                            <button>New User Registration</button>
+                        </Link>
+                        <Link to="/loginpage">
+                            <button>Returning User Login</button>
+                        </Link>
+                        <Link to="/graphpage">
+                            <button>Display Your Sleep Graph</button>
+                        </Link>
                     </div>
                 </div>
             </div>
