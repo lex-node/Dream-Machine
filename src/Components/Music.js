@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import soundfile from "../Images/(Disc 2) 08 - Darkness Begins (The Soundtrack Album).mp3"
 import Sound from 'react-sound';
 

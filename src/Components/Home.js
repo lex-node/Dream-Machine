@@ -14,7 +14,7 @@ const Home = props => {
                     </div>
                     <div className="buttonContainer">
                         <button><Link to="/registrationpage">New User Registration</Link></button>
-                        <button><Link to="/loginpage">Returning User Login Page</Link></button>
+                        <button><Link to="/loginpage">Returning User Login</Link></button>
                         <button><Link to="/graphpage">Display Your Sleep Graph</Link></button>
                     </div>
                 </div>
