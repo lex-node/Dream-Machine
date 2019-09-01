@@ -12,7 +12,9 @@ const LoginForm = props => {
             <Header/>
             <div className="main-section">
                 <div className="banner">
-                    <h1>Login Here</h1>
+                    <div className="blackcloud">
+                        <h1>Login Here</h1>
+                    </div>
                     <Form>
                         <div className="fieldContainer">
                             {props.touched.username && props.errors.username && <p>{props.errors.username}</p>}
@@ -23,9 +25,9 @@ const LoginForm = props => {
                             <Field type="password" name="password" placeholder="Password"/>
                         </div>
                     </Form>
-                    <button disabled={props.isSubmitting} type="Submit">Save</button>
-                    <br/>
-                    <Link to="/">Home</Link>
+                    <div className="buttonContainer">
+                        <button disabled={props.isSubmitting} type="Submit">Save</button>
+                    </div>
                 </div>
             </div>
         </div>

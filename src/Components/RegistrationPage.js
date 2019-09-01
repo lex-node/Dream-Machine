@@ -5,28 +5,32 @@ import axios from "axios";
 import * as Yup from "yup";
 import Header from "./Header";
 
-function RegistrationForm({isSubmitting, status}) {
+const RegistrationForm = props => {
 
     return (
         <div className="container">
             <Header/>
             <div className="main-section">
                 <div className="banner">
-                    <h1>Register Here</h1>
+                    <div className="blackcloud">
+                        <h1>Register Here</h1>
+                    </div>
                     <Form>
                         <div className="fieldContainer">
+                           {props.touched.username && props.errors.username && <p>{props.errors.username}</p>}
                             <Field type="username" name="username" placeholder="Username"/>
                         </div>
                         <div className="fieldContainer">
+                            {props.touched.password && props.errors.password && <p>{props.errors.password}</p>}
                             <Field type="password" name="password" placeholder="Password"/>
                         </div>
                         <div className="fieldContainer">
                             <Field type="birthdate" name="birthdate" placeholder="Birthdate"/>
                         </div>
                     </Form>
-                    <button disabled={isSubmitting}>Save</button>
-                    <br/>
-                    <Link to="/">Home</Link>
+                    <div className="buttonContainer">
+                        <button id="loneButton" disabled={props.isSubmitting}>Save</button>
+                    </div>
                 </div>
             </div>
         </div>
