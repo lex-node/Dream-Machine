@@ -182,8 +182,8 @@ p {
 
 .navigation {
     display: flex;
-    width: 80%;
-    height: 45px;
+    width: 90%;
+    height: 30%;
     border-radius: 50px;
     background-color: black;
     opacity: 0.87;
