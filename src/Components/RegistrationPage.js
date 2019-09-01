@@ -23,8 +23,8 @@ function RegistrationForm({isSubmitting, status}) {
                         <div className="fieldContainer">
                             <Field type="birthdate" name="birthdate" placeholder="Birthdate"/>
                         </div>
-                        <button disabled={isSubmitting}>Save</button>
                     </Form>
+                    <button disabled={isSubmitting}>Save</button>
                     <br/>
                     <Link to="/">Home</Link>
                 </div>

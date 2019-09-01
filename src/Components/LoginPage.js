@@ -22,8 +22,8 @@ const LoginForm = props => {
                             {props.touched.password && props.errors.password && <p>{props.errors.password}</p>}
                             <Field type="password" name="password" placeholder="Password"/>
                         </div>
-                        <button disabled={props.isSubmitting} type="Submit">Save</button>
                     </Form>
+                    <button disabled={props.isSubmitting} type="Submit">Save</button>
                     <br/>
                     <Link to="/">Home</Link>
                 </div>

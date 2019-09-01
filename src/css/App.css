@@ -262,6 +262,12 @@ footer {
     align-items: center;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .container {
 }
 
@@ -284,9 +290,9 @@ footer {
 .main-section .banner {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    align-content: space-between;
+    align-content: center;
     padding-top: 15%;
     line-height: 1.2;
     height: 100%;
