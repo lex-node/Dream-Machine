@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import Header from "./Header";
 import {sleepData} from './data';
-import {Route} from "react-router-dom";
 import Home from './Home';
 import CanvasJSReact from '../canvasjs.react';
 
