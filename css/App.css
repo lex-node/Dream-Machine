@@ -1,0 +1,392 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background: url("https://www.desktopbackground.org/p/2013/07/13/606604_hieronymus-bosch-hell_1920x1080_h.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html,
+body {
+    font-family: s;
+    color: #2E4482;
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    width: 90%;
+    height: 30%;
+    border-radius: 50px;
+    background-color: black;
+    opacity: 0.87;
+    padding: 10px;
+}
+
+.nav-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    align-content: end;
+}
+
+@media (max-width: 500px) {
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.logo {
+    margin: 0 1.2rem;
+    font-size: 3rem;
+}
+
+@media (max-width: 500px) {
+    .logo {
+        padding: 10px;
+        font-size: 3rem;
+    }
+}
+
+.logo a {
+    color: #7b224d;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+@media (max-width: 500px) {
+    .nav {
+        width: 100%;
+        padding: 8px;
+        justify-content: space-between;
+    }
+}
+
+.nav-links {
+    font-size: 3rem;
+    color: #7b224d;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+.nav-links:hover {
+    background: chartreuse;
+    color: #7b224d;
+}
+
+footer {
+    color: #7b224d;
+    padding: 20px 0;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        background-size: cover;
+        background-position: inherit;
+    }
+}
+
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 100%;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 15%;
+    line-height: 1.2;
+    height: 100%;
+    color: #6d0a3a;
+}
+
+.blackcloud {
+    background-color: black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    opacity: 0.87;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.graphContainer{
+    display: flex;
+}
+
+.graphcloud {
+    background-color: black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    opacity: 0.87;
+    margin: 1%;
+}
+
+.sleepGraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 8rem;
+    display: flex;
+}
+
+.banner h3 {
+    font-size: 3rem;
+    padding-bottom: 20px;
+    margin: 20px;
+}
+
+.buttonContainer {
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #6d0a3a;
+    font-size: 3rem;
+    margin-top: 5%;
+    width: 100%;
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    color: #6d0a3a;
+    border: 1px solid #4f104f;
+    cursor: pointer;
+    font-size: 1.8rem;
+    opacity: 0.95;
+}
+
+
+@media (max-width: 500px) {
+    button {
+        width: 95%;
+    }
+}
+
+button:hover {
+    background: chartreuse;
+    color: #7b224d;
+}
+
+button a {
+    text-decoration: none;
+}
