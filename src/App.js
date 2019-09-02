@@ -8,7 +8,6 @@ import GraphPage from './Components/GraphPage.js';
 import Music from './Components/Music'
 
 function App() {
-
     return (
         <div className="App">
             <header className="App-header">

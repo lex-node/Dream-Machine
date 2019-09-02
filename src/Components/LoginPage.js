@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import Header from "./Header";
 
 
-const LoginForm = props => {
+const LoginForm = ({values, errors, touched, isSubmitting}) => {
     return (
         <div className="container">
             <Header/>
@@ -16,17 +16,17 @@ const LoginForm = props => {
                     </div>
                     <Form>
                         <div className="fieldContainer">
-                            {props.touched.username && props.errors.username && <p>{props.errors.username}</p>}
+                            {touched.username && errors.username && <p>{errors.username}</p>}
                             <Field type="username" name="username" placeholder="Username"/>
                         </div>
                         <div className="fieldContainer">
-                            {props.touched.password && props.errors.password && <p>{props.errors.password}</p>}
+                            {touched.password && errors.password && <p>{errors.password}</p>}
                             <Field type="password" name="password" placeholder="Password"/>
                         </div>
+                        <div className="buttonContainer">
+                            <button disabled={isSubmitting} type="Submit">Save</button>
+                        </div>
                     </Form>
-                    <div className="buttonContainer">
-                        <button disabled={props.isSubmitting} type="Submit">Save</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -35,10 +35,10 @@ const LoginForm = props => {
 
 const LoginPage = withFormik({
 
-    mapPropsToValues(props) {
+    mapPropsToValues({username, password}) {
         return {
-            username: props.username || "",
-            password: props.password || ""
+            username: username || "",
+            password: password || ""
         };
     },
     validationSchema: Yup.object().shape({

@@ -4,7 +4,7 @@ import axios from "axios";
 import * as Yup from "yup";
 import Header from "./Header";
 
-const RegistrationForm = props => {
+const RegistrationForm = ({values, errors, touched, isSubmitting}) => {
 
     return (
         <div className="container">
@@ -16,20 +16,20 @@ const RegistrationForm = props => {
                     </div>
                     <Form>
                         <div className="fieldContainer">
-                           {props.touched.username && props.errors.username && <p>{props.errors.username}</p>}
+                            {touched.username && errors.username && <p>{errors.username}</p>}
                             <Field type="username" name="username" placeholder="Username"/>
                         </div>
                         <div className="fieldContainer">
-                            {props.touched.password && props.errors.password && <p>{props.errors.password}</p>}
+                            {touched.password && errors.password && <p>{errors.password}</p>}
                             <Field type="password" name="password" placeholder="Password"/>
                         </div>
                         <div className="fieldContainer">
                             <Field type="birthdate" name="birthdate" placeholder="Birthdate"/>
                         </div>
+                        <div className="buttonContainer">
+                            <button disabled={isSubmitting}>Save</button>
+                        </div>
                     </Form>
-                    <div className="buttonContainer">
-                        <button id="loneButton" disabled={props.isSubmitting}>Save</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -59,7 +59,8 @@ const RegistrationPage = withFormik({
         axios
             .post("https://sleeptrack.herokuapp.com/api/register", values)
             .then(res => {
-                console.log(res.data); // Data was created successfully and logs to console
+                console.log(res.data.token);
+                console.log(res.data.id);// Data was created successfully and logs to console
                 setStatus(res.data);
                 resetForm();
                 setSubmitting(false);
