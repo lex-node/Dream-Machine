@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import Header from "./Header";
 import {sleepData} from './data';
+import {Route} from "react-router-dom";
+import Home from './Home';
 import CanvasJSReact from '../canvasjs.react';
 
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
@@ -12,12 +14,12 @@ const GraphPage = props => {
     const [userSleepData, setUserSleepData] = useState([]);
 
     //this shows how sleepData would be pulled from the back end if sleepData were non-empty
+    const id = localStorage.getItem('id');
+    console.log(id);
+    let tokenStr = localStorage.getItem('token');
+    console.log(tokenStr);
 
     useEffect(() => {
-        const id = localStorage.getItem('id');
-        console.log(id);
-        let tokenStr = localStorage.getItem('token');
-        console.log(tokenStr);
         axios
             .get(`https://sleeptrack.herokuapp.com/api/user/${id}`, {headers: {"authorize": `${tokenStr}`}})
             /*            .post('https://sleeptrack.herokuapp.com/api/sleepData', {userID: {id}, start: "9:00", end: "10:00",hours: 1})*/
@@ -58,20 +60,27 @@ const GraphPage = props => {
         }]
     }
 
-    return (
-        <div className="container">
-            <Header/>
-            <div className="main-section">
-                <div className="banner">
-                    <div className="blackcloud">
-                        <h1>Review Your Sleep Graph</h1>
+    if (tokenStr.length > 1) {
+        return (
+            <div className="container">
+                <Header/>
+                <div className="main-section">
+                    <div className="banner">
+                        <div className="blackcloud">
+                            <h1>Review Your Sleep Graph</h1>
+                        </div>
+                        <CanvasJSChart options={options}/>
                     </div>
-                    <CanvasJSChart options={options}/>
                 </div>
             </div>
-        </div>
 
-    );
+        );
+    } else {
+        alert("You need to be logged in to access your sleep data");
+        return (
+            <Home/>
+        )
+    }
 }
 
 export default GraphPage;
