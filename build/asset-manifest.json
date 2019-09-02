@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c385fa6d.chunk.css",
+    "main.js": "/static/js/main.5c7e367f.chunk.js",
+    "main.js.map": "/static/js/main.5c7e367f.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.f4f54f04.js",
+    "runtime~main.js.map": "/static/js/runtime~main.f4f54f04.js.map",
+    "static/js/2.346ddfda.chunk.js": "/static/js/2.346ddfda.chunk.js",
+    "static/js/2.346ddfda.chunk.js.map": "/static/js/2.346ddfda.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b7149508e37b3b1af51e56dba065f5cc.js": "/precache-manifest.b7149508e37b3b1af51e56dba065f5cc.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c385fa6d.chunk.css.map": "/static/css/main.c385fa6d.chunk.css.map",
+    "static/media/(Disc 2) 08 - Darkness Begins (The Soundtrack Album).mp3": "/static/media/(Disc 2) 08 - Darkness Begins (The Soundtrack Album).73b41126.mp3"
+  }
+}
